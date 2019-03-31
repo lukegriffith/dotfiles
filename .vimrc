@@ -3,6 +3,7 @@ filetype plugin indent on " filetype plugins
 set tabstop=2 shiftwidth=2 expandtab " tab settings
 set number relativenumber " relative numbers from cursor
 set autoindent " enable auto line intenting
+set wrap linebreak nolist
 
 " autocomplete
 set wildmenu
