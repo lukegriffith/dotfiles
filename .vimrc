@@ -32,3 +32,5 @@ set encoding=utf-8 " use utf-8 encoding
 set t_Co=256 " enable 256 colours
 
 "set cursorline " highliht cursor 
+
+set path+=**
