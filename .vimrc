@@ -8,6 +8,7 @@ set autoindent " enable auto line intenting
 set wildmenu
 set wildmode=longest,list,full
 
+set ttymouse=xterm2 " vim mouse in tmux
 set mouse=a " mouse mode
 set showmatch " show matching braces
 set hlsearch " highlight matches
