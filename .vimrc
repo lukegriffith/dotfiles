@@ -3,7 +3,6 @@ filetype plugin indent on " filetype plugins
 set tabstop=2 shiftwidth=2 expandtab " tab settings
 set number relativenumber " relative numbers from cursor
 set autoindent " enable auto line intenting
-set wrap linebreak nolist
 
 " autocomplete
 set wildmenu
@@ -32,7 +31,19 @@ set encoding=utf-8 " use utf-8 encoding
 set t_Co=256 " enable 256 colours
 
 "set cursorline " highliht cursor 
+"
+" enables fuzzy search from find recursive from cwd
+" :find *.go<TAB>
+set path+=**
+
+" :ls list open files
+" :b <substring>
+" <CTRL>n autocomplte... <CTRL>p backwards
+"   exporter/gather.go
+"   gf /w cursor on a filepath will move to it.
+"
+set paste
+
 set splitbelow
 set splitright
 
-set path+=**
