@@ -48,6 +48,7 @@ set paste
 set splitbelow
 set splitright
 
-" Add a highlight for lines that go over 81 characters.
-call matchadd('ColorColumn', '\%81v', 100)
+" Add a light grey highlight for lines that go over 80 characters.
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
+set colorcolumn=81
 
