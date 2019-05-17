@@ -12,5 +12,4 @@ git init
 git remote add origin git@github.com:lukemgriffith/dotfiles.git
 git fetch --all --prune
 git checkout master
-git checkout master
 ```
