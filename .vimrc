@@ -1,8 +1,6 @@
 syntax enable " syntax processing
 filetype plugin indent on " filetype plugins
-set tabstop=2 shiftwidth=2 expandtab " tab settings
 set number relativenumber " relative numbers from cursor
-set autoindent " enable auto line intenting
 
 " autocomplete
 set wildmenu
@@ -51,4 +49,10 @@ set splitright
 " Add a light grey highlight for lines that go over 80 characters.
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
 set colorcolumn=81
+
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
 
