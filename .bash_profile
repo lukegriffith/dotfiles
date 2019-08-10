@@ -13,7 +13,7 @@ undblk='\033[4;30m' # Black - Underline
 undred='\033[4;31m' # Red
 bakblk='\033[40m'   # Black - Background
 bakred='\033[41m'   # Red
-badgrn='\033[42m'   # Green
+BADGREEN='\033[42m'   # Green
 RESET='\033[0m'    # Text Reset
 
 PROMPT_last_command()
@@ -41,6 +41,6 @@ if [ -f '/private/tmp/google-cloud-sdk/path.bash.inc' ]; then . '/private/tmp/go
 if [ -f '/private/tmp/google-cloud-sdk/completion.bash.inc' ]; then . '/private/tmp/google-cloud-sdk/completion.bash.inc'; fi
 
 
-PS1="\u@${PURPLE}\h${RESET}:${CYAN}\W${RESET} \n$(PROMPT_last_command)" 
+PS1="${BADGREEN}\u${RESET}@${PURPLE}\h${RESET}:${CYAN}\W${RESET} \n$(PROMPT_last_command)" 
 
 export PS1
