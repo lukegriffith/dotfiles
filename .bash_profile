@@ -1,19 +1,27 @@
-RED="\033[1;5;91m"
-GREEN="\033[1;5;92m"
-NONE="\033[m"
-NORMAL="\[\033[0m\]"
-YELLOW="\[\033[1;4;93m\]"
-MAGENTA="\[\033[35m\]"
-WHITE="\[\033[1;37m\]"
-BLINK="\[\033[5m\]"
-
+BLACK='\033[0;30m' # Black - Regular
+RED='\033[0;31m' # Red
+GREEN='\033[0;32m' # Green
+txtylw='\033[0;33m' # Yellow
+txtblu='\033[0;34m' # Blue
+PURPLE='\033[0;35m' # Purple
+CYAN='\033[0;36m' # Cyan
+txtwht='\033[0;37m' # White
+bldblk='\033[1;30m' # Black - Bold
+bldred='\033[1;31m' # Red
+bldgrn='\033[1;32m' # Green
+undblk='\033[4;30m' # Black - Underline
+undred='\033[4;31m' # Red
+bakblk='\033[40m'   # Black - Background
+bakred='\033[41m'   # Red
+badgrn='\033[42m'   # Green
+RESET='\033[0m'    # Text Reset
 
 PROMPT_last_command()
 {
  if [ "$?" == "0" ]; then
-   echo -e "${GREEN}\$${NORMAL} "
+   echo -e "${GREEN}\$${RESET} "
  else
-   echo -e "${RED}\$${NORMAL} " 
+   echo -e "${RED}\$${RESET} " 
  fi
 }
 
@@ -33,6 +41,6 @@ if [ -f '/private/tmp/google-cloud-sdk/path.bash.inc' ]; then . '/private/tmp/go
 if [ -f '/private/tmp/google-cloud-sdk/completion.bash.inc' ]; then . '/private/tmp/google-cloud-sdk/completion.bash.inc'; fi
 
 
-PS1="\u@\h:\W \n$(PROMPT_last_command)" 
+PS1="\u@\h:${CYAN}\W${RESET} \n$(PROMPT_last_command)" 
 
 export PS1
