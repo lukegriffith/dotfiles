@@ -1,19 +1,7 @@
-BLACK='\033[0;30m' # Black - Regular
 RED='\033[0;31m' # Red
 GREEN='\033[0;32m' # Green
-txtylw='\033[0;33m' # Yellow
-txtblu='\033[0;34m' # Blue
 PURPLE='\033[0;35m' # Purple
 CYAN='\033[0;36m' # Cyan
-txtwht='\033[0;37m' # White
-bldblk='\033[1;30m' # Black - Bold
-bldred='\033[1;31m' # Red
-bldgrn='\033[1;32m' # Green
-undblk='\033[4;30m' # Black - Underline
-undred='\033[4;31m' # Red
-bakblk='\033[40m'   # Black - Background
-bakred='\033[41m'   # Red
-BADGREEN='\033[42m'   # Green
 RESET='\033[0m'    # Text Reset
 
 PROMPT_last_command()
