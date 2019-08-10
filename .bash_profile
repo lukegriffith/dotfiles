@@ -41,6 +41,6 @@ if [ -f '/private/tmp/google-cloud-sdk/path.bash.inc' ]; then . '/private/tmp/go
 if [ -f '/private/tmp/google-cloud-sdk/completion.bash.inc' ]; then . '/private/tmp/google-cloud-sdk/completion.bash.inc'; fi
 
 
-PS1="${BADGREEN}\u${RESET}@${PURPLE}\h${RESET}:${CYAN}\W${RESET} \n$(PROMPT_last_command)" 
+PS1="${GREEN}\u${RESET}@${PURPLE}\h${RESET}:${CYAN}\W${RESET} \n$(PROMPT_last_command)" 
 
 export PS1
