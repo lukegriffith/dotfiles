@@ -10,6 +10,6 @@ if [ -f '/private/tmp/google-cloud-sdk/path.bash.inc' ]; then . '/private/tmp/go
 if [ -f '/private/tmp/google-cloud-sdk/completion.bash.inc' ]; then . '/private/tmp/google-cloud-sdk/completion.bash.inc'; fi
 
 
-PS1='\u@\h:\w \n$ ' 
+PS1='\u@\h:\W \n$ ' 
 
 export PS1
