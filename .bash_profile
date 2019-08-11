@@ -4,14 +4,7 @@ PURPLE='\033[0;35m' # Purple
 CYAN='\033[0;36m' # Cyan
 RESET='\033[0m'    # Text Reset
 
-PROMPT_last_command()
-{
- if [ "$?" == "0" ]; then
-   echo -e "${GREEN}\$${RESET} "
- else
-   echo -e "${RED}\$${RESET} " 
- fi
-}
+
 
 
 alias k=kubectl
@@ -29,6 +22,6 @@ if [ -f '/private/tmp/google-cloud-sdk/path.bash.inc' ]; then . '/private/tmp/go
 if [ -f '/private/tmp/google-cloud-sdk/completion.bash.inc' ]; then . '/private/tmp/google-cloud-sdk/completion.bash.inc'; fi
 
 
-PS1="${PURPLE}\u${RESET}@${PURPLE}\h${RESET}:${CYAN}\W${RESET} \n$(PROMPT_last_command)" 
+PS1="${GREEN}\u${RESET}@${PURPLE}\h${RESET}:${CYAN}\W${RESET} \n$ "
 
 export PS1
