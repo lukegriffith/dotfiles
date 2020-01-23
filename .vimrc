@@ -55,4 +55,12 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+# Plug extension manager
+call plug#begin()
+
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'hashivim/vim-terraform'
+
+call plug#end()
 
