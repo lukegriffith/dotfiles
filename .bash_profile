@@ -18,7 +18,6 @@ alias ll='ls -la'
 alias k=kubectl
 alias t=terraform
 
-
 prompt_command() {
   local status="$?"
   local status_color="\[\]"
@@ -27,9 +26,12 @@ prompt_command() {
   else
     status_color=$light_green
   fi
-  export PS1="${yellow}\D{%T} ${RESET} ${CYAN}\W${RESET} \n${status_color}λ${RESET} "
-  #export PS1="${yellow}\D{%T} ${RESET} ${CYAN}\W: ${RESET} "
+
+  git_branch=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
+
+  export PS1="${yellow}\D{%T} ${RESET}${CYAN}\W${RESET} ${PURPLE}${git_branch}${RESET} \n${status_color}λ${RESET} "
 }
+
 export GIT_PS1_SHOWDIRTYSTATE=1
 export PROMPT_COMMAND=prompt_command
 
