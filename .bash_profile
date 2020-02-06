@@ -28,9 +28,11 @@ prompt_command() {
   fi
 
   git_branch=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
+  venv_status=$(test -z $VIRTUAL_ENV || echo "(v:$(basename $VIRTUAL_ENV))")
 
-  export PS1="${yellow}\D{%T} ${RESET}${CYAN}\W${RESET} ${PURPLE}${git_branch}${RESET} \n${status_color}λ${RESET} "
+  export PS1="${yellow}\D{%T} ${RESET}${CYAN}\W${RESET} ${PURPLE}${git_branch}${RESET} ${RED}${venv_status}${RESET} \n${status_color}λ${RESET} "
 }
+
 
 export GIT_PS1_SHOWDIRTYSTATE=1
 export PROMPT_COMMAND=prompt_command
