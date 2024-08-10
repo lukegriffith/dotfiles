@@ -2,5 +2,7 @@
 !.vimrc
 !.tmux.conf
 !.gitignore
-!.bash_profile
+!.p10k.zsh
+!.zprofile
+!.zshrc
 !README.md
