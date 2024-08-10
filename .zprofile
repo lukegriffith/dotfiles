@@ -1,6 +1,7 @@
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
 alias vim="nvim"
+alias cd="z"
+
 
 bindkey '^R' histdb-skim-widget
