@@ -8,8 +8,9 @@ due to the hidden attribute.
 
 ```
 cd
-git init
-git remote add origin git@github.com:lukemgriffith/dotfiles.git
-git fetch --all --prune
-git checkout master
+git init --bare $HOME/.dotfiles
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+dotfiles remote add origin git@github.com:lukemgriffith/dotfiles.git
+dotfiles fetch --all --prune
+dotfiles checkout -B macos
 ```
