@@ -11,7 +11,18 @@ args = [
 
 [window]
 opacity = 0.75
-blur = true
-startup_mode = "Fullscreen"
+blur = false
+startup_mode = "Windowed"
 option_as_alt = "OnlyRight"
 dynamic_padding = true
+decorations = "buttonless"
+
+padding = {x = 5,y = 5}
+dimensions = {columns = 200, lines = 75}
+position = {x = 45, y = 60}
+
+[keyboard]
+bindings = [
+	{ key = "Escape", mods = "Shift",action = "ToggleViMode" }
+]
+

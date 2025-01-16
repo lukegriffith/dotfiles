@@ -1,0 +1,12 @@
+#!/bin/bash
+
+USAGE="Usage: $0 DIR"
+
+if [ $# -lt 1 ]; then
+	echo "Error"
+	echo $USAGE
+fi
+
+DIR=$1
+
+tmux new-session -d -c $DIR -s $DIR
