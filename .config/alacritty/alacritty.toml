@@ -5,8 +5,7 @@ normal = { family = "0xProto Nerd Font", style = "Regular" }
 [shell]
 program = "/bin/zsh"
 args = [
-	"-c",
-	"source ~/.zshrc && exec /opt/homebrew/bin/tmux new-session -A -s main"
+	"-l",
 ]
 
 [window]

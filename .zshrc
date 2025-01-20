@@ -131,3 +131,4 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
 
 export PATH=$PATH:/Users/lukegriffith/go/bin
+
