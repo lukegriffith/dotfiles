@@ -6,6 +6,8 @@
 !.zprofile
 !.zshrc
 !README.md
+!.config/
 !.config/alacritty/alacritty.toml
+!.config/starship.toml
 !bin/*
 !bin
