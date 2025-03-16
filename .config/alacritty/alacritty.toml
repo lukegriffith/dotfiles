@@ -9,7 +9,7 @@ args = [
 ]
 
 [window]
-opacity = 0.75
+opacity = 0.95
 blur = false
 startup_mode = "Windowed"
 option_as_alt = "OnlyRight"
